@@ -1,0 +1,17 @@
+/app/backend/node_modules/passport-oauth2/lib/strategy.js:87
+  if (!options.clientID) { throw new TypeError('OAuth2Strategy requires a clientID option'); }
+                           ^
+
+TypeError: OAuth2Strategy requires a clientID option
+    at Strategy.OAuth2Strategy (/app/backend/node_modules/passport-oauth2/lib/strategy.js:87:34)
+    at new Strategy (/app/backend/node_modules/passport-google-oauth20/lib/strategy.js:52:18)
+    at module.exports (/app/backend/src/config/passport.js:7:5)
+    at Object.<anonymous> (/app/backend/src/app.js:7:29)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+
+Node.js v22.17.1
